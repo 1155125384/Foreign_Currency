@@ -9,7 +9,7 @@ import currency_api.source.ocbc as ocbc
 import currency_api.source.ch as ch
 import currency_api.source.scb as scb
 from currency_api.common import get_current_time,save_json_result,create_log
-from currency_api.constant import api_name, buffer, log_type, mongodb
+from currency_api.constant import api_name, buffer, log_type
 import time
 
 def run():

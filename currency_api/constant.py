@@ -13,8 +13,9 @@ class log_type:
     error = "error"
     warning = "warning"
 
+# For Connecting to MongoDB
 class mongodb:
-    url = "mongodb+srv://1155125384:1155125384@fyp.9iiwf.mongodb.net/?retryWrites=true&w=majority"
+    url = "mongodb+srv://<<link_input>>/?retryWrites=true&w=majority"
     db_name = api_name.self
     collection_all_bank_rate = api_name.all_bank_rate
     collection_final_rate = api_name.final_rate

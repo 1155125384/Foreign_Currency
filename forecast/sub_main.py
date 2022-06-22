@@ -48,12 +48,15 @@ def run():
             result += "]}"
             save_json_result(result, api_name.forecast)
 
+            # For Connecting to MongoDB
+            """
             cluster = MongoClient(mongodb.url)
             db = cluster[mongodb.db_name]
             collection = db[mongodb.collection_name]
             collection.insert_one(json.loads(result))
             log_info = "Data uploaded to mongodb >> " + mongodb.db_name + " >> " + mongodb.collection_name
             create_log(log_info,log_type.info,api_name.forecast)
+            """
 
         except Exception as ex:
             log_error = "Unexpected Error in " + api_name.forecast + " : " + str(ex)

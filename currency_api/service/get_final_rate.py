@@ -2,7 +2,7 @@ import json
 import time
 from pymongo import MongoClient
 from currency_api.common import create_log, get_current_time, save_json_result
-from ..constant import api_name, buffer, currency_name, log_type, mongodb
+from ..constant import api_name, buffer, currency_name, log_type
 
 def find_best_rate(json_contents, currency, all_rate):
     list_buy_sell=[[] for i in range(2)]
@@ -18,17 +18,6 @@ def find_best_rate(json_contents, currency, all_rate):
     temp_rate = {"currency":currency,"buy":final_buy,"sell":final_sell}
     all_rate.append(temp_rate)
     return all_rate
-
-# path = "file/json/get_all_bank_exchange_rate/2022-01-14/2022-01-14_1449.json"
-# raw_contents = ""
-
-# with open(path) as f:
-#     raw_contents = f.readlines()
-
-# temp_content = ''.join(raw_contents)
-# rm_space_contents = temp_content.replace(" ","")
-# str_contents = rm_space_contents.replace("\n","")
-# json_contents = json.loads(str_contents)
 
 def run(raw_contents):
     log_info = "Start Process: " + api_name.final_rate

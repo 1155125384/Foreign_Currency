@@ -11,8 +11,9 @@ class buffer:
     repeat_process = 60
     retry = 5
 
+# For Connecting to MongoDB
 class mongodb:
-    url = "mongodb+srv://1155125384:1155125384@fyp.9iiwf.mongodb.net/?retryWrites=true&w=majority"
+    url = "mongodb+srv://<<link_input>>/?retryWrites=true&w=majority"
     db_name = api_name.forecast
     collection_name = "result"
 
