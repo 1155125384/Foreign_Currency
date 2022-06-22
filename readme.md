@@ -1,5 +1,5 @@
 ## Content
----
+
 1.  currency_api
     *   get_all_bank_exchange_rate
     *   get_final_rate
@@ -13,7 +13,7 @@
 
 ***
 ## Result
----
+
 A file named `file` will be automatically generated and include following result generate by the backend codes
 1.    `exchange_rates_website` 
 (from `currency_api`)
@@ -32,7 +32,7 @@ You may refer to **sample_file**, where the program execute with 30 mins
 
 ***
 ## Compile
----
+
 Please directly run the `main.py` file to test the program. 
 
 As mentioned, it probably shows **error** in log file as the code include upload data to MongoDB and might have no access to the online database.
